@@ -1,0 +1,22 @@
+#bug{
+    width: 200px;
+    height: 500px;
+    margin: 0 auto;
+    background: url('./images/bag.png') center no-repeat;
+}
+#bug.burst{
+    background: url('./images/bag-burst.png') center no-repeat;
+}
+#bug_health{
+    width: 200px;
+    border: 2px solid #000;
+    margin: 0 auto 20px auto;
+}
+#bug_health div{
+    height: 20px;
+    background: crimson;
+}
+#control{
+    width: 120px;
+    margin: 0 auto;
+}

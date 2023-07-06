@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width='device-width', initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.7.14/dist/vue.js"></script>
+   
+    <title>punch game</title>
+</head>
+<body>
+    <div id="vue_app">
+        <div id="bug" v-bind:class="{burst: ended}">
+
+        </div>
+
+        <div id="bug_health">
+            <div :style="{ 'width': health+'%' }"></div>
+        </div>
+        <div id="control">
+            <button v-on:click="punch" v-show="!ended">punch</button>
+            <button v-on:click="restart">restart</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
